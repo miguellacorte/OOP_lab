@@ -12,6 +12,29 @@
   </body>
 
     <script>
+// So what is going on here? Well, an object is made up of multiple members, 
+// each of which has a name (e.g. name and age above), and a value (e.g. ['Bob', 'Smith'] and 32). 
+// Each name/value pair must be separated by a comma, and the name and value in each case are separated by a colon. 
+// The syntax always follows this pattern:
 
+// const objectName = {
+//   member1Name: member1Value,
+//   member2Name: member2Value,
+//   member3Name: member3Value
+// };
+
+
+const person = {
+name: ['bob', 'smith'],
+age: '32',
+bio: function () {
+  console.log(`i'm ${this.name[0]} ${this.name[1]} and i'm ${this.age} years old`)
+}
+};
+
+// The value of an object member can be pretty much anything — in our person object we've got a number, an array, and two functions. 
+// The first two items are data items, and are referred to as the object's PROPERTIES. 
+// The last two items are functions that allow the object to do something with that data, and are referred to as the object's METHODS.
+console.log('age' in person)
     </script>
 </html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+
+  <script>
+    // LITERAL Notation
+
+    var burgerKing = {
+      name: "Burger King",
+      seats: 55,
+      food: "Burgers",
+    };
+
+    var Yoko = {
+      name: "Yoko Sushi",
+      seats: 45,
+      food: "Sushi",
+    };
+
+    var Thai = {
+      name: "Thai restaurant",
+      seats: 20,
+      food: "Thai food",
+    };
+
+    // CONSTRUCTOR notation
+    function Restaurant(name, seats, food) {
+        this.name = name
+        this.seats = seats
+        this.food = food
+    }
+
+    var Yoko = new Restaurant('Yoko Sushi', 55, "Sushi")
+
+    console.log(Yoko.name)
+    // result: Yoko Sushi
+    
+  </script>
+</html>
